@@ -29,8 +29,8 @@ public class FrmVentana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnInstruccioAsignacionESActionPerformed = new javax.swing.JButton();
-        btnInstCondicionalSimpleActionPerformed = new javax.swing.JButton();
+        btnInstruccioAsignacionESA = new javax.swing.JButton();
+        btnInstCondicionalSimple = new javax.swing.JButton();
         btnCondicionaldoble = new javax.swing.JButton();
         btnCondicionalMultiple = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -40,28 +40,28 @@ public class FrmVentana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnInstruccioAsignacionESActionPerformed.setText("lnts E/s Asognacion");
-        btnInstruccioAsignacionESActionPerformed.addActionListener(new java.awt.event.ActionListener() {
+        btnInstruccioAsignacionESA.setText("Instruccio Asignacion ESA");
+        btnInstruccioAsignacionESA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInstruccioAsignacionESActionPerformedActionPerformed(evt);
+                btnInstruccioAsignacionESAActionPerformed(evt);
             }
         });
 
-        btnInstCondicionalSimpleActionPerformed.setText("Inst.Condicional Simprle");
-        btnInstCondicionalSimpleActionPerformed.addActionListener(new java.awt.event.ActionListener() {
+        btnInstCondicionalSimple.setText("Int. Condicional Simple");
+        btnInstCondicionalSimple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInstCondicionalSimpleActionPerformedActionPerformed(evt);
+                btnInstCondicionalSimpleActionPerformed(evt);
             }
         });
 
-        btnCondicionaldoble.setText("Inst. Condicional doble");
+        btnCondicionaldoble.setText("Int. Condicional doble");
         btnCondicionaldoble.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCondicionaldobleActionPerformed(evt);
             }
         });
 
-        btnCondicionalMultiple.setText("Inst. Condicional Multeple");
+        btnCondicionalMultiple.setText("Int. Condicional Multiple");
         btnCondicionalMultiple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCondicionalMultipleActionPerformed(evt);
@@ -74,38 +74,40 @@ public class FrmVentana extends javax.swing.JFrame {
 
         jButton7.setText("jButton7");
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Hola Mundo");
+        jLabel1.setIconTextGap(5);
+        jLabel1.setMaximumSize(new java.awt.Dimension(259, 204));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnInstruccioAsignacionESActionPerformed)
-                            .addComponent(btnInstCondicionalSimpleActionPerformed)
-                            .addComponent(btnCondicionalMultiple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5)
-                            .addComponent(jButton6)
-                            .addComponent(jButton7)
-                            .addComponent(btnCondicionaldoble, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addComponent(jLabel1)))
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton5)
+                    .addComponent(jButton6)
+                    .addComponent(jButton7)
+                    .addComponent(btnInstruccioAsignacionESA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnInstCondicionalSimple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCondicionaldoble, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCondicionalMultiple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(154, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(124, 124, 124))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(32, 32, 32)
-                .addComponent(btnInstruccioAsignacionESActionPerformed)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnInstruccioAsignacionESA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnInstCondicionalSimpleActionPerformed)
+                .addComponent(btnInstCondicionalSimple)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnCondicionaldoble)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -116,14 +118,50 @@ public class FrmVentana extends javax.swing.JFrame {
                 .addComponent(jButton6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton7)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnInstCondicionalSimpleActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstCondicionalSimpleActionPerformedActionPerformed
-        int compra, boletos;
+    private void btnCondicionalMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionalMultipleActionPerformed
+        int dia = Integer.parseInt( JOptionPane.showInputDialog(this, 
+                                                "Escrive un numero entero"));
+        
+        String cadenaDia ="";
+        
+        switch (dia){
+            case 1: cadenaDia += " Domingo";
+                break;
+            case 2: cadenaDia += " Lunes";
+                break;
+            case 3: cadenaDia += " Martes";
+                break;
+            case 4: cadenaDia += " Miercoles";
+               break; 
+            case 5: cadenaDia += " Jueves";
+                break;
+            case 6: cadenaDia += " Viernes";
+                break;
+            case 7: cadenaDia += " Sabado";
+                break;
+            default: cadenaDia += " ERROR";
+        }
+        JOptionPane.showMessageDialog(this, cadenaDia);
+    }//GEN-LAST:event_btnCondicionalMultipleActionPerformed
+
+    private void btnInstruccioAsignacionESAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccioAsignacionESAActionPerformed
+        //llamada a una caja de dialogo de entrada.
+        String nombre = JOptionPane.showInputDialog(this, "Escribe tu nombre: " );
+        
+        //llamada a una caja 
+        String saludo = "Bienvenido " + nombre + "Adios";
+        
+        JOptionPane.showMessageDialog(this, saludo);
+    }//GEN-LAST:event_btnInstruccioAsignacionESAActionPerformed
+
+    private void btnInstCondicionalSimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstCondicionalSimpleActionPerformed
+int compra, boletos;
         
         
         
@@ -137,19 +175,7 @@ public class FrmVentana extends javax.swing.JFrame {
             
         }
        JOptionPane.showMessageDialog(this, "Gracias por tu compra ");
-    }//GEN-LAST:event_btnInstCondicionalSimpleActionPerformedActionPerformed
-
-    private void btnInstruccioAsignacionESActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccioAsignacionESActionPerformedActionPerformed
-        
-        
-        //llamada a una caja de dialogo de entrada.
-        String nombre = JOptionPane.showInputDialog(this, "Escribe tu nombre: " );
-        
-        //llamada a una caja 
-        String saludo = "Bienvenido " + nombre + "Adios";
-        
-        JOptionPane.showMessageDialog(this, saludo);
-    }//GEN-LAST:event_btnInstruccioAsignacionESActionPerformedActionPerformed
+    }//GEN-LAST:event_btnInstCondicionalSimpleActionPerformed
 
     private void btnCondicionaldobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionaldobleActionPerformed
         
@@ -161,14 +187,7 @@ public class FrmVentana extends javax.swing.JFrame {
         else
           JOptionPane.showMessageDialog(this, num + " es impar");  
         
-        
     }//GEN-LAST:event_btnCondicionaldobleActionPerformed
-
-    private void btnCondicionalMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionalMultipleActionPerformed
-       
-       
-       
-    }//GEN-LAST:event_btnCondicionalMultipleActionPerformed
 
     /**
      * @param args the command line arguments
@@ -201,8 +220,6 @@ public class FrmVentana extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FrmVentana().setVisible(true);
-                
-                        
             }
         });
     }
@@ -210,8 +227,8 @@ public class FrmVentana extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCondicionalMultiple;
     private javax.swing.JButton btnCondicionaldoble;
-    private javax.swing.JButton btnInstCondicionalSimpleActionPerformed;
-    private javax.swing.JButton btnInstruccioAsignacionESActionPerformed;
+    private javax.swing.JButton btnInstCondicionalSimple;
+    private javax.swing.JButton btnInstruccioAsignacionESA;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
