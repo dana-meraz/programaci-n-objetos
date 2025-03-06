@@ -29,55 +29,76 @@ public class FrmVentana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jComboBox1 = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
         btnInstruccioAsignacionESA = new javax.swing.JButton();
         btnInstCondicionalSimple = new javax.swing.JButton();
         btnCondicionaldoble = new javax.swing.JButton();
         btnCondicionalMultiple = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btnCiclicaMientras = new javax.swing.JButton();
+        btnCiclicaHacerMientras = new javax.swing.JButton();
+        btnClicaDesde = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txaTabla = new javax.swing.JTextArea();
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnInstruccioAsignacionESA.setText("Instruccio Asignacion ESA");
+        jLabel1.setText("Hola Mundo");
+
+        btnInstruccioAsignacionESA.setText("Asignacion ESA");
         btnInstruccioAsignacionESA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInstruccioAsignacionESAActionPerformed(evt);
             }
         });
 
-        btnInstCondicionalSimple.setText("Int. Condicional Simple");
+        btnInstCondicionalSimple.setText("Condicional Simple");
         btnInstCondicionalSimple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInstCondicionalSimpleActionPerformed(evt);
             }
         });
 
-        btnCondicionaldoble.setText("Int. Condicional doble");
+        btnCondicionaldoble.setText("Condicion aldoble");
         btnCondicionaldoble.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCondicionaldobleActionPerformed(evt);
             }
         });
 
-        btnCondicionalMultiple.setText("Int. Condicional Multiple");
+        btnCondicionalMultiple.setText("Condicional Multiple");
         btnCondicionalMultiple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCondicionalMultipleActionPerformed(evt);
             }
         });
 
-        jButton5.setText("jButton5");
+        btnCiclicaMientras.setText("Inst. Ciclica Mientras");
+        btnCiclicaMientras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCiclicaMientrasActionPerformed(evt);
+            }
+        });
 
-        jButton6.setText("jButton6");
+        btnCiclicaHacerMientras.setText("Inst.Ciclica Hacer-Mientras");
+        btnCiclicaHacerMientras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCiclicaHacerMientrasActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("jButton7");
+        btnClicaDesde.setText("Int. Clica Desde");
+        btnClicaDesde.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClicaDesdeActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Hola Mundo");
-        jLabel1.setIconTextGap(5);
-        jLabel1.setMaximumSize(new java.awt.Dimension(259, 204));
+        txaTabla.setColumns(20);
+        txaTabla.setRows(5);
+        jScrollPane1.setViewportView(txaTabla);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,47 +106,94 @@ public class FrmVentana extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(btnInstruccioAsignacionESA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnInstCondicionalSimple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCondicionaldoble, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCondicionalMultiple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCiclicaMientras)
+                    .addComponent(btnCiclicaHacerMientras)
+                    .addComponent(btnClicaDesde)
+                    .addComponent(btnInstruccioAsignacionESA)
+                    .addComponent(btnInstCondicionalSimple)
+                    .addComponent(btnCondicionaldoble)
+                    .addComponent(btnCondicionalMultiple))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(218, 218, 218)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(154, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnInstruccioAsignacionESA)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnInstCondicionalSimple)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCondicionaldoble)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCondicionalMultiple)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton7)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnInstruccioAsignacionESA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnInstCondicionalSimple)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCondicionaldoble)
+                        .addGap(13, 13, 13)
+                        .addComponent(btnCondicionalMultiple)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCiclicaMientras)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCiclicaHacerMientras)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnClicaDesde)
+                        .addGap(0, 154, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnInstruccioAsignacionESAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccioAsignacionESAActionPerformed
+        // TODO add your handling code here:
+        
+        //llamada a una caja de dialogo de entrada.
+        String nombre = JOptionPane.showInputDialog(this, "Escribe tu nombre: " );
+        
+        //llamada a una caja 
+        String saludo = "Bienvenido " + nombre + " Adios";
+        
+        JOptionPane.showMessageDialog(this, saludo);
+    }//GEN-LAST:event_btnInstruccioAsignacionESAActionPerformed
+
+    private void btnInstCondicionalSimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstCondicionalSimpleActionPerformed
+        // TODO add your handling code here:
+        int compra, boletos;
+        
+        
+        
+        compra = Integer.parseInt( JOptionPane.showInputDialog(this, 
+                                        "¿cuál fue el monto de tu compla") );
+        
+        //priceso
+        if( compra >= 1100 ){
+            boletos = (compra-1000)/100;
+            JOptionPane.showMessageDialog(this, "Obtienes " + boletos +  " boletos");
+            
+        }
+       JOptionPane.showMessageDialog(this, "Gracias por tu compra ");
+    }//GEN-LAST:event_btnInstCondicionalSimpleActionPerformed
+
+    private void btnCondicionaldobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionaldobleActionPerformed
+        // TODO add your handling code here:
+        int num = Integer.parseInt( JOptionPane.showInputDialog(this, 
+                                        "Escribe un numero entero") );
+        
+        if( num%2 == 0)
+          JOptionPane.showMessageDialog(this, num + " es par");
+        else
+          JOptionPane.showMessageDialog(this, num + " es impar");  
+    }//GEN-LAST:event_btnCondicionaldobleActionPerformed
+
     private void btnCondicionalMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionalMultipleActionPerformed
-        int dia = Integer.parseInt( JOptionPane.showInputDialog(this, 
+         int dia = Integer.parseInt( JOptionPane.showInputDialog(this, 
                                                 "Escrive un numero entero"));
         
         String cadenaDia ="";
@@ -150,44 +218,36 @@ public class FrmVentana extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, cadenaDia);
     }//GEN-LAST:event_btnCondicionalMultipleActionPerformed
 
-    private void btnInstruccioAsignacionESAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstruccioAsignacionESAActionPerformed
-        //llamada a una caja de dialogo de entrada.
-        String nombre = JOptionPane.showInputDialog(this, "Escribe tu nombre: " );
+    private void btnCiclicaMientrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCiclicaMientrasActionPerformed
         
-        //llamada a una caja 
-        String saludo = "Bienvenido " + nombre + "Adios";
         
-        JOptionPane.showMessageDialog(this, saludo);
-    }//GEN-LAST:event_btnInstruccioAsignacionESAActionPerformed
+        
+    }//GEN-LAST:event_btnCiclicaMientrasActionPerformed
 
-    private void btnInstCondicionalSimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstCondicionalSimpleActionPerformed
-int compra, boletos;
+    private void btnCiclicaHacerMientrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCiclicaHacerMientrasActionPerformed
         
         
-        
-        compra = Integer.parseInt( JOptionPane.showInputDialog(this, 
-                                        "¿cuál fue el monto de tu compla") );
-        
-        //priceso
-        if( compra >= 1100 ){
-            boletos = (compra-1000)/100;
-            JOptionPane.showMessageDialog(this, "Obtienes " + boletos +  " boletos");
+    }//GEN-LAST:event_btnCiclicaHacerMientrasActionPerformed
+/*  -Variable de control.
+            -Inicializar la variable de control.
+            -Condicion de pertenecia.
+            -Modificacion de la variable de control.
             
-        }
-       JOptionPane.showMessageDialog(this, "Gracias por tu compra ");
-    }//GEN-LAST:event_btnInstCondicionalSimpleActionPerformed
-
-    private void btnCondicionaldobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCondicionaldobleActionPerformed
+        */
+    private void btnClicaDesdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClicaDesdeActionPerformed
+        byte cont;
+        String cadena = "";
         
-        int num = Integer.parseInt( JOptionPane.showInputDialog(this, 
-                                        "Escribe un numero entero") );
+        byte num = Byte.parseByte( JOptionPane.showInputDialog(this, 
+                            "Escrive el numero de la tabla de multiplicar"));
         
-        if( num%2 == 0)
-          JOptionPane.showMessageDialog(this, num + " es par");
-        else
-          JOptionPane.showMessageDialog(this, num + " es impar");  
+       for( cont=1; cont<=10; cont++)
+           cadena += num + "x" + cont + " = " + num*cont + "\n"; 
+           
+       txaTabla.setText(cadena);
+       
         
-    }//GEN-LAST:event_btnCondicionaldobleActionPerformed
+    }//GEN-LAST:event_btnClicaDesdeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,13 +285,16 @@ int compra, boletos;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCiclicaHacerMientras;
+    private javax.swing.JButton btnCiclicaMientras;
+    private javax.swing.JButton btnClicaDesde;
     private javax.swing.JButton btnCondicionalMultiple;
     private javax.swing.JButton btnCondicionaldoble;
     private javax.swing.JButton btnInstCondicionalSimple;
     private javax.swing.JButton btnInstruccioAsignacionESA;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea txaTabla;
     // End of variables declaration//GEN-END:variables
 }
